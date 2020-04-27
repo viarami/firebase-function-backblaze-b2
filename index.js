@@ -9,7 +9,7 @@ const fs = require("fs");
 // Initiate B2 with auth keys
 const b2 = new b2CloudStorage({
   auth: {
-    accountId: "<accountId>", // NOTE: This is the keyID unique to the key
+    accountId: "<keyId>", // The unique keyID to the key
     applicationKey: "<applicationKey>",
   },
 });
@@ -18,7 +18,7 @@ const B2bucketId = "";
 // Store in Environment Variables
 // const b2 = new B2({
 //   auth: {
-//     accountId: functions.config().b2.accountid,
+//     accountId: functions.config().b2.keyid,
 //     applicationKey: functions.config().b2.appkey,
 //   },
 // });
@@ -56,12 +56,12 @@ exports.uploadFile = functions.https.onRequest((req, res) => {
   });
 
   busboy.on("finish", () => {
-    b2.authorize(async function (err) {
+    b2.authorize(function (err) {
       if (err) {
         throw err;
       }
 
-      await b2.uploadFile(
+      b2.uploadFile(
         tempFile.filepath,
         {
           bucketId: B2bucketId,
@@ -124,12 +124,12 @@ exports.uploadImage = functions.https.onRequest((req, res) => {
   });
 
   busboy.on("finish", () => {
-    b2.authorize(async function (err) {
+    b2.authorize(function (err) {
       if (err) {
         throw err;
       }
 
-      await b2.uploadFile(
+      b2.uploadFile(
         tempFile.filepath,
         {
           bucketId: B2bucketId,

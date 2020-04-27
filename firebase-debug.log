@@ -1,0 +1,803 @@
+[debug] [2020-04-27T10:09:22.096Z] ----------------------------------------------------------------------
+[debug] [2020-04-27T10:09:22.099Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start --only functions
+[debug] [2020-04-27T10:09:22.099Z] CLI Version:   8.0.2
+[debug] [2020-04-27T10:09:22.099Z] Platform:      darwin
+[debug] [2020-04-27T10:09:22.099Z] Node Version:  v12.15.0
+[debug] [2020-04-27T10:09:22.107Z] Time:          Mon Apr 27 2020 12:09:22 GMT+0200 (GMT+02:00)
+[debug] [2020-04-27T10:09:22.107Z] ----------------------------------------------------------------------
+[debug] [2020-04-27T10:09:22.108Z] 
+[debug] [2020-04-27T10:09:22.117Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-27T10:09:22.118Z] > authorizing via signed-in user
+[info] i  emulators: Starting emulators: functions
+[debug] [2020-04-27T10:09:22.151Z] [hub] writing locator at /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/hub-viarami-test.json
+[info] ✔  hub: emulator hub started at http://localhost:4400
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "12"
+[info] ✔  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions" for Cloud Functions...
+[debug] [2020-04-27T10:09:22.456Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-27T10:09:22.457Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-04-27T10:09:22.459Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-27T10:09:22.461Z] [worker-~diagnostic~-33538928-d10a-4f52-a1af-bc8f75472c28]: Assigning socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_51120.sock 
+[debug] [2020-04-27T10:09:22.461Z] [worker-~diagnostic~-33538928-d10a-4f52-a1af-bc8f75472c28]: BUSY 
+[debug] [2020-04-27T10:09:22.729Z] [runtime-status] [51120] Functions runtime initialized. {"cwd":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions","node_version":"12.15.0"} 
+[debug] [2020-04-27T10:09:22.730Z] [runtime-status] [51120] Disabled runtime features: undefined 
+[debug] [2020-04-27T10:09:22.735Z] [runtime-status] [51120] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:09:22.738Z] [runtime-status] [51120] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:09:22.740Z] [runtime-status] [51120] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-27T10:09:22.819Z] [runtime-status] [51120] Checked functions.config() {"config":{}} 
+[debug] [2020-04-27T10:09:22.820Z] [runtime-status] [51120] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:09:22.821Z] [runtime-status] [51120] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:09:22.821Z] [runtime-status] [51120] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:09:22.821Z] [runtime-status] [51120] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"}} 
+[warn] ⚠  Error: Cannot find module 'busboy'
+Require stack:
+- /Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/index.js
+- /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:793:17)
+    at Function.Module._load (internal/modules/cjs/loader.js:686:27)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/index.js:4:16)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-04-27T10:09:23.115Z] [worker-~diagnostic~-33538928-d10a-4f52-a1af-bc8f75472c28]: exited 
+[debug] [2020-04-27T10:09:23.115Z] [worker-~diagnostic~-33538928-d10a-4f52-a1af-bc8f75472c28]: FINISHED 
+[debug] [2020-04-27T10:10:14.448Z] ----------------------------------------------------------------------
+[debug] [2020-04-27T10:10:14.450Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start --only functions
+[debug] [2020-04-27T10:10:14.451Z] CLI Version:   8.0.2
+[debug] [2020-04-27T10:10:14.451Z] Platform:      darwin
+[debug] [2020-04-27T10:10:14.451Z] Node Version:  v12.15.0
+[debug] [2020-04-27T10:10:14.452Z] Time:          Mon Apr 27 2020 12:10:14 GMT+0200 (GMT+02:00)
+[debug] [2020-04-27T10:10:14.452Z] ----------------------------------------------------------------------
+[debug] [2020-04-27T10:10:14.452Z] 
+[debug] [2020-04-27T10:10:14.462Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-27T10:10:14.462Z] > authorizing via signed-in user
+[info] i  emulators: Starting emulators: functions
+[warn] ⚠  emulators: It seems that you are running multiple instances of the emulator suite for project viarami-test. This may result in unexpected behavior.
+[debug] [2020-04-27T10:10:14.522Z] [hub] writing locator at /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/hub-viarami-test.json
+[info] ✔  hub: emulator hub started at http://localhost:4400
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "12"
+[info] ✔  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions" for Cloud Functions...
+[debug] [2020-04-27T10:10:14.870Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-27T10:10:14.870Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-04-27T10:10:14.871Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-27T10:10:14.871Z] [worker-~diagnostic~-fd3733f1-1b8f-455f-b8ca-9b66638272b6]: Assigning socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_51169.sock 
+[debug] [2020-04-27T10:10:14.872Z] [worker-~diagnostic~-fd3733f1-1b8f-455f-b8ca-9b66638272b6]: BUSY 
+[debug] [2020-04-27T10:10:15.260Z] [runtime-status] [51169] Functions runtime initialized. {"cwd":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions","node_version":"12.15.0"} 
+[debug] [2020-04-27T10:10:15.261Z] [runtime-status] [51169] Disabled runtime features: undefined 
+[debug] [2020-04-27T10:10:15.264Z] [runtime-status] [51169] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:10:15.266Z] [runtime-status] [51169] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:10:15.267Z] [runtime-status] [51169] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-27T10:10:15.326Z] [runtime-status] [51169] Checked functions.config() {"config":{}} 
+[debug] [2020-04-27T10:10:15.326Z] [runtime-status] [51169] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:10:15.329Z] [runtime-status] [51169] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:10:15.329Z] [runtime-status] [51169] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:10:15.329Z] [runtime-status] [51169] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-27T10:10:15.590Z] [worker-~diagnostic~-fd3733f1-1b8f-455f-b8ca-9b66638272b6]: IDLE 
+[info] ✔  functions[uploadImage]: http function initialized (http://localhost:5001/viarami-test/us-central1/uploadImage).
+[info] ✔  emulators: All emulators started, it is now safe to connect.
+[debug] [2020-04-27T10:11:09.000Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-27T10:11:09.001Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-27T10:11:09.001Z] Accepted request POST /viarami-test/us-central1/uploadImage --> uploadImage
+[debug] [2020-04-27T10:11:09.008Z] [worker-pool] addWorker(uploadImage) 
+[debug] [2020-04-27T10:11:09.008Z] [worker-pool] Adding worker with key uploadImage, total=1 
+[debug] [2020-04-27T10:11:09.008Z] [worker-pool] submitWork(triggerId=uploadImage) 
+[debug] [2020-04-27T10:11:09.009Z] [worker-uploadImage-bb4cda23-faf6-4726-9a18-1ae122ff0692]: Assigning socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_51214.sock 
+[debug] [2020-04-27T10:11:09.009Z] [worker-uploadImage-bb4cda23-faf6-4726-9a18-1ae122ff0692]: BUSY 
+[debug] [2020-04-27T10:11:09.547Z] [runtime-status] [51214] Functions runtime initialized. {"cwd":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions","node_version":"12.15.0"} 
+[debug] [2020-04-27T10:11:09.552Z] [runtime-status] [51214] Disabled runtime features: undefined 
+[debug] [2020-04-27T10:11:09.562Z] [runtime-status] [51214] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:11:09.564Z] [runtime-status] [51214] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:11:09.567Z] [runtime-status] [51214] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-27T10:11:09.636Z] [runtime-status] [51214] Checked functions.config() {"config":{}} 
+[debug] [2020-04-27T10:11:09.638Z] [runtime-status] [51214] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:11:09.639Z] [runtime-status] [51214] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:11:09.640Z] [runtime-status] [51214] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:11:09.640Z] [runtime-status] [51214] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-27T10:11:09.892Z] [runtime-status] [51214] Trigger "uploadImage" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "uploadImage"
+[debug] [2020-04-27T10:11:09.892Z] [runtime-status] [51214] triggerDefinition {"httpsTrigger":{},"name":"uploadImage","entryPoint":"uploadImage"} 
+[debug] [2020-04-27T10:11:09.893Z] [runtime-status] [51214] Running uploadImage in mode HTTPS 
+[debug] [2020-04-27T10:11:09.899Z] [runtime-status] [51214] Attempting to listen to socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_51214.sock 
+[debug] [2020-04-27T10:11:09.902Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-27T10:11:09.937Z] [runtime-status] [51214] Ephemeral server handling POST request 
+[debug] [2020-04-27T10:11:09.996Z] [runtime-status] [51214] Ephemeral server survived. 
+[info] i  functions: Finished "uploadImage" in ~1s
+[debug] [2020-04-27T10:11:10.002Z] [worker-uploadImage-bb4cda23-faf6-4726-9a18-1ae122ff0692]: IDLE 
+[debug] [2020-04-27T10:11:10.002Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-27T10:11:27.854Z] File /Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/index.js changed, reloading triggers 
+[debug] [2020-04-27T10:11:28.860Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-04-27T10:11:28.860Z] [worker-~diagnostic~-fd3733f1-1b8f-455f-b8ca-9b66638272b6]: FINISHING 
+[debug] [2020-04-27T10:11:28.860Z] [worker-pool] Shutting down IDLE worker (uploadImage) 
+[debug] [2020-04-27T10:11:28.861Z] [worker-uploadImage-bb4cda23-faf6-4726-9a18-1ae122ff0692]: FINISHING 
+[debug] [2020-04-27T10:11:28.880Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-27T10:11:28.880Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-04-27T10:11:28.880Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-27T10:11:28.880Z] [worker-~diagnostic~-6f5d84d5-7dee-4e5e-97a4-d8ec5b512bde]: Assigning socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_51224.sock 
+[debug] [2020-04-27T10:11:28.881Z] [worker-~diagnostic~-6f5d84d5-7dee-4e5e-97a4-d8ec5b512bde]: BUSY 
+[debug] [2020-04-27T10:11:28.883Z] [worker-~diagnostic~-fd3733f1-1b8f-455f-b8ca-9b66638272b6]: exited 
+[debug] [2020-04-27T10:11:28.883Z] [worker-~diagnostic~-fd3733f1-1b8f-455f-b8ca-9b66638272b6]: FINISHED 
+[debug] [2020-04-27T10:11:28.883Z] [worker-uploadImage-bb4cda23-faf6-4726-9a18-1ae122ff0692]: exited 
+[debug] [2020-04-27T10:11:28.883Z] [worker-uploadImage-bb4cda23-faf6-4726-9a18-1ae122ff0692]: FINISHED 
+[debug] [2020-04-27T10:11:29.211Z] [runtime-status] [51224] Functions runtime initialized. {"cwd":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions","node_version":"12.15.0"} 
+[debug] [2020-04-27T10:11:29.213Z] [runtime-status] [51224] Disabled runtime features: undefined 
+[debug] [2020-04-27T10:11:29.218Z] [runtime-status] [51224] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:11:29.219Z] [runtime-status] [51224] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:11:29.221Z] [runtime-status] [51224] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-27T10:11:29.258Z] [runtime-status] [51224] Checked functions.config() {"config":{}} 
+[debug] [2020-04-27T10:11:29.259Z] [runtime-status] [51224] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:11:29.261Z] [runtime-status] [51224] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:11:29.261Z] [runtime-status] [51224] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:11:29.262Z] [runtime-status] [51224] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-27T10:11:29.412Z] [worker-~diagnostic~-6f5d84d5-7dee-4e5e-97a4-d8ec5b512bde]: IDLE 
+[debug] [2020-04-27T10:11:30.012Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-27T10:11:30.013Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-27T10:11:30.013Z] Accepted request POST /viarami-test/us-central1/uploadImage --> uploadImage
+[debug] [2020-04-27T10:11:30.013Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-04-27T10:11:30.013Z] [worker-pool] Cleaned up workers for uploadImage: 1 --> 0 
+[debug] [2020-04-27T10:11:30.019Z] [worker-pool] addWorker(uploadImage) 
+[debug] [2020-04-27T10:11:30.019Z] [worker-pool] Adding worker with key uploadImage, total=1 
+[debug] [2020-04-27T10:11:30.019Z] [worker-pool] submitWork(triggerId=uploadImage) 
+[debug] [2020-04-27T10:11:30.019Z] [worker-uploadImage-92efcb42-f1a3-431d-9125-bb9e48e0e5fc]: Assigning socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_51225.sock 
+[debug] [2020-04-27T10:11:30.019Z] [worker-uploadImage-92efcb42-f1a3-431d-9125-bb9e48e0e5fc]: BUSY 
+[debug] [2020-04-27T10:11:30.716Z] [runtime-status] [51225] Functions runtime initialized. {"cwd":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions","node_version":"12.15.0"} 
+[debug] [2020-04-27T10:11:30.721Z] [runtime-status] [51225] Disabled runtime features: undefined 
+[debug] [2020-04-27T10:11:30.726Z] [runtime-status] [51225] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:11:30.727Z] [runtime-status] [51225] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:11:30.729Z] [runtime-status] [51225] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-27T10:11:30.809Z] [runtime-status] [51225] Checked functions.config() {"config":{}} 
+[debug] [2020-04-27T10:11:30.810Z] [runtime-status] [51225] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:11:30.811Z] [runtime-status] [51225] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:11:30.812Z] [runtime-status] [51225] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:11:30.812Z] [runtime-status] [51225] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-27T10:11:31.053Z] [runtime-status] [51225] Trigger "uploadImage" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "uploadImage"
+[debug] [2020-04-27T10:11:31.056Z] [runtime-status] [51225] triggerDefinition {"httpsTrigger":{},"name":"uploadImage","entryPoint":"uploadImage"} 
+[debug] [2020-04-27T10:11:31.056Z] [runtime-status] [51225] Running uploadImage in mode HTTPS 
+[debug] [2020-04-27T10:11:31.064Z] [runtime-status] [51225] Attempting to listen to socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_51225.sock 
+[debug] [2020-04-27T10:11:31.070Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-27T10:11:31.112Z] [runtime-status] [51225] Ephemeral server handling POST request 
+[debug] [2020-04-27T10:11:31.143Z] [runtime-status] [51225] Ephemeral server survived. 
+[warn] ⚠  External network resource requested!
+   - URL: "https://api.backblazeb2.com/b2api/v2/b2_authorize_account"
+ - Be careful, this may be a production service.
+[info] >  (node:51225) UnhandledPromiseRejectionWarning: ReferenceError: thumbPath is not defined {"user":"(node:51225) UnhandledPromiseRejectionWarning: ReferenceError: thumbPath is not defined"}
+[info] >      at /Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/index.js:89:9 {"user":"    at /Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/index.js:89:9"}
+[info] >      at /Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/b2-cloud-storage/index.js:87:11 {"user":"    at /Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/b2-cloud-storage/index.js:87:11"}
+[info] >      at Request._callback (/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/b2-cloud-storage/index.js:763:12) {"user":"    at Request._callback (/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/b2-cloud-storage/index.js:763:12)"}
+[info] >      at Request.self.callback (/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/request/request.js:185:22) {"user":"    at Request.self.callback (/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/request/request.js:185:22)"}
+[info] >      at Request.emit (events.js:223:5) {"user":"    at Request.emit (events.js:223:5)"}
+[info] >      at Request.<anonymous> (/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/request/request.js:1154:10) {"user":"    at Request.<anonymous> (/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/request/request.js:1154:10)"}
+[info] >      at Request.emit (events.js:223:5) {"user":"    at Request.emit (events.js:223:5)"}
+[info] >      at IncomingMessage.<anonymous> (/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/request/request.js:1076:12) {"user":"    at IncomingMessage.<anonymous> (/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/request/request.js:1076:12)"}
+[info] >      at Object.onceWrapper (events.js:312:28) {"user":"    at Object.onceWrapper (events.js:312:28)"}
+[info] >      at IncomingMessage.emit (events.js:228:7) {"user":"    at IncomingMessage.emit (events.js:228:7)"}
+[info] >  (node:51225) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1) {"user":"(node:51225) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)"}
+[info] >  (node:51225) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code. {"user":"(node:51225) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code."}
+[warn] ⚠  functions: Your function timed out after ~60s. To configure this timeout, see
+      https://firebase.google.com/docs/functions/manage-functions#set_timeout_and_memory_allocation.
+[info] >  /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:614 {"user":"/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:614"}
+[info] >                  throw new Error("Function timed out."); {"user":"                throw new Error(\"Function timed out.\");"}
+[info] >                  ^ {"user":"                ^"}
+[info] >   {"user":""}
+[info] >  Error: Function timed out. {"user":"Error: Function timed out."}
+[info] >      at Timeout._onTimeout (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:614:23) {"user":"    at Timeout._onTimeout (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:614:23)"}
+[info] >      at listOnTimeout (internal/timers.js:531:17) {"user":"    at listOnTimeout (internal/timers.js:531:17)"}
+[info] >      at processTimers (internal/timers.js:475:7) {"user":"    at processTimers (internal/timers.js:475:7)"}
+[debug] [2020-04-27T10:12:31.084Z] [worker-uploadImage-92efcb42-f1a3-431d-9125-bb9e48e0e5fc]: exited 
+[debug] [2020-04-27T10:12:31.084Z] [worker-uploadImage-92efcb42-f1a3-431d-9125-bb9e48e0e5fc]: FINISHED 
+[debug] [2020-04-27T10:12:31.084Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-27T10:12:50.533Z] File /Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/index.js changed, reloading triggers 
+[debug] [2020-04-27T10:12:51.537Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-04-27T10:12:51.537Z] [worker-~diagnostic~-6f5d84d5-7dee-4e5e-97a4-d8ec5b512bde]: FINISHING 
+[debug] [2020-04-27T10:12:51.538Z] [worker-pool] Cleaned up workers for uploadImage: 1 --> 0 
+[debug] [2020-04-27T10:12:51.546Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-27T10:12:51.546Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-04-27T10:12:51.546Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-27T10:12:51.546Z] [worker-~diagnostic~-92e0541c-be48-4136-b697-4e8ce98cde59]: Assigning socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_51268.sock 
+[debug] [2020-04-27T10:12:51.547Z] [worker-~diagnostic~-92e0541c-be48-4136-b697-4e8ce98cde59]: BUSY 
+[debug] [2020-04-27T10:12:51.548Z] [worker-~diagnostic~-6f5d84d5-7dee-4e5e-97a4-d8ec5b512bde]: exited 
+[debug] [2020-04-27T10:12:51.548Z] [worker-~diagnostic~-6f5d84d5-7dee-4e5e-97a4-d8ec5b512bde]: FINISHED 
+[debug] [2020-04-27T10:12:52.029Z] [runtime-status] [51268] Functions runtime initialized. {"cwd":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions","node_version":"12.15.0"} 
+[debug] [2020-04-27T10:12:52.031Z] [runtime-status] [51268] Disabled runtime features: undefined 
+[debug] [2020-04-27T10:12:52.034Z] [runtime-status] [51268] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:12:52.035Z] [runtime-status] [51268] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:12:52.037Z] [runtime-status] [51268] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-27T10:12:52.088Z] [runtime-status] [51268] Checked functions.config() {"config":{}} 
+[debug] [2020-04-27T10:12:52.089Z] [runtime-status] [51268] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:12:52.090Z] [runtime-status] [51268] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:12:52.092Z] [runtime-status] [51268] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:12:52.092Z] [runtime-status] [51268] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-27T10:12:52.415Z] [worker-~diagnostic~-92e0541c-be48-4136-b697-4e8ce98cde59]: IDLE 
+[debug] [2020-04-27T10:13:06.301Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-27T10:13:06.301Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-27T10:13:06.301Z] Accepted request POST /viarami-test/us-central1/uploadImage --> uploadImage
+[debug] [2020-04-27T10:13:06.302Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-04-27T10:13:06.311Z] [worker-pool] addWorker(uploadImage) 
+[debug] [2020-04-27T10:13:06.312Z] [worker-pool] Adding worker with key uploadImage, total=1 
+[debug] [2020-04-27T10:13:06.312Z] [worker-pool] submitWork(triggerId=uploadImage) 
+[debug] [2020-04-27T10:13:06.312Z] [worker-uploadImage-e571262d-25a1-497d-8d02-b9e6251a27d2]: Assigning socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_51275.sock 
+[debug] [2020-04-27T10:13:06.312Z] [worker-uploadImage-e571262d-25a1-497d-8d02-b9e6251a27d2]: BUSY 
+[debug] [2020-04-27T10:13:07.014Z] [runtime-status] [51275] Functions runtime initialized. {"cwd":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions","node_version":"12.15.0"} 
+[debug] [2020-04-27T10:13:07.016Z] [runtime-status] [51275] Disabled runtime features: undefined 
+[debug] [2020-04-27T10:13:07.018Z] [runtime-status] [51275] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:13:07.019Z] [runtime-status] [51275] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:13:07.021Z] [runtime-status] [51275] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-27T10:13:07.055Z] [runtime-status] [51275] Checked functions.config() {"config":{}} 
+[debug] [2020-04-27T10:13:07.056Z] [runtime-status] [51275] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:13:07.056Z] [runtime-status] [51275] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:13:07.057Z] [runtime-status] [51275] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:13:07.057Z] [runtime-status] [51275] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-27T10:13:07.409Z] [runtime-status] [51275] Trigger "uploadImage" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "uploadImage"
+[debug] [2020-04-27T10:13:07.411Z] [runtime-status] [51275] triggerDefinition {"httpsTrigger":{},"name":"uploadImage","entryPoint":"uploadImage"} 
+[debug] [2020-04-27T10:13:07.411Z] [runtime-status] [51275] Running uploadImage in mode HTTPS 
+[debug] [2020-04-27T10:13:07.418Z] [runtime-status] [51275] Attempting to listen to socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_51275.sock 
+[debug] [2020-04-27T10:13:07.421Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-27T10:13:07.456Z] [runtime-status] [51275] Ephemeral server handling POST request 
+[debug] [2020-04-27T10:13:07.481Z] [runtime-status] [51275] Ephemeral server survived. 
+[warn] ⚠  External network resource requested!
+   - URL: "https://api.backblazeb2.com/b2api/v2/b2_authorize_account"
+ - Be careful, this may be a production service.
+[info] >  (node:51275) UnhandledPromiseRejectionWarning: ReferenceError: thumbPath is not defined {"user":"(node:51275) UnhandledPromiseRejectionWarning: ReferenceError: thumbPath is not defined"}
+[info] >      at /Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/index.js:91:9 {"user":"    at /Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/index.js:91:9"}
+[info] >      at /Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/b2-cloud-storage/index.js:87:11 {"user":"    at /Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/b2-cloud-storage/index.js:87:11"}
+[info] >      at Request._callback (/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/b2-cloud-storage/index.js:763:12) {"user":"    at Request._callback (/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/b2-cloud-storage/index.js:763:12)"}
+[info] >      at Request.self.callback (/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/request/request.js:185:22) {"user":"    at Request.self.callback (/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/request/request.js:185:22)"}
+[info] >      at Request.emit (events.js:223:5) {"user":"    at Request.emit (events.js:223:5)"}
+[info] >      at Request.<anonymous> (/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/request/request.js:1154:10) {"user":"    at Request.<anonymous> (/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/request/request.js:1154:10)"}
+[info] >      at Request.emit (events.js:223:5) {"user":"    at Request.emit (events.js:223:5)"}
+[info] >      at IncomingMessage.<anonymous> (/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/request/request.js:1076:12) {"user":"    at IncomingMessage.<anonymous> (/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/request/request.js:1076:12)"}
+[info] >      at Object.onceWrapper (events.js:312:28) {"user":"    at Object.onceWrapper (events.js:312:28)"}
+[info] >      at IncomingMessage.emit (events.js:228:7) {"user":"    at IncomingMessage.emit (events.js:228:7)"}
+[info] >  (node:51275) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1) {"user":"(node:51275) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)"}
+[info] >  (node:51275) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code. {"user":"(node:51275) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code."}
+[debug] [2020-04-27T10:13:59.178Z] File /Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/index.js changed, reloading triggers 
+[debug] [2020-04-27T10:14:00.182Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-04-27T10:14:00.182Z] [worker-~diagnostic~-92e0541c-be48-4136-b697-4e8ce98cde59]: FINISHING 
+[debug] [2020-04-27T10:14:00.183Z] [worker-pool] Marking BUSY worker to finish (uploadImage) 
+[debug] [2020-04-27T10:14:00.183Z] [worker-uploadImage-e571262d-25a1-497d-8d02-b9e6251a27d2]: FINISHING 
+[debug] [2020-04-27T10:14:00.191Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-27T10:14:00.191Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-04-27T10:14:00.192Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-27T10:14:00.192Z] [worker-~diagnostic~-6427931e-c865-4763-9741-0b4d420a8e3d]: Assigning socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_51303.sock 
+[debug] [2020-04-27T10:14:00.192Z] [worker-~diagnostic~-6427931e-c865-4763-9741-0b4d420a8e3d]: BUSY 
+[debug] [2020-04-27T10:14:00.194Z] [worker-~diagnostic~-92e0541c-be48-4136-b697-4e8ce98cde59]: exited 
+[debug] [2020-04-27T10:14:00.194Z] [worker-~diagnostic~-92e0541c-be48-4136-b697-4e8ce98cde59]: FINISHED 
+[debug] [2020-04-27T10:14:01.194Z] [runtime-status] [51303] Functions runtime initialized. {"cwd":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions","node_version":"12.15.0"} 
+[debug] [2020-04-27T10:14:01.197Z] [runtime-status] [51303] Disabled runtime features: undefined 
+[debug] [2020-04-27T10:14:01.202Z] [runtime-status] [51303] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:14:01.204Z] [runtime-status] [51303] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:14:01.207Z] [runtime-status] [51303] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-27T10:14:01.269Z] [runtime-status] [51303] Checked functions.config() {"config":{}} 
+[debug] [2020-04-27T10:14:01.270Z] [runtime-status] [51303] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:14:01.271Z] [runtime-status] [51303] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:14:01.273Z] [runtime-status] [51303] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:14:01.273Z] [runtime-status] [51303] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-27T10:14:01.515Z] [worker-~diagnostic~-6427931e-c865-4763-9741-0b4d420a8e3d]: IDLE 
+[debug] [2020-04-27T10:14:04.755Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-04-27T10:14:04.755Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-04-27T10:14:04.755Z] Accepted request POST /viarami-test/us-central1/uploadImage --> uploadImage
+[debug] [2020-04-27T10:14:04.755Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-04-27T10:14:04.766Z] [worker-pool] addWorker(uploadImage) 
+[debug] [2020-04-27T10:14:04.766Z] [worker-pool] Adding worker with key uploadImage, total=2 
+[debug] [2020-04-27T10:14:04.767Z] [worker-pool] submitWork(triggerId=uploadImage) 
+[debug] [2020-04-27T10:14:04.767Z] [worker-uploadImage-2e88173e-5835-4c58-8715-69646b5e9d98]: Assigning socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_51307.sock 
+[debug] [2020-04-27T10:14:04.767Z] [worker-uploadImage-2e88173e-5835-4c58-8715-69646b5e9d98]: BUSY 
+[debug] [2020-04-27T10:14:05.716Z] [runtime-status] [51307] Functions runtime initialized. {"cwd":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions","node_version":"12.15.0"} 
+[debug] [2020-04-27T10:14:05.718Z] [runtime-status] [51307] Disabled runtime features: undefined 
+[debug] [2020-04-27T10:14:05.720Z] [runtime-status] [51307] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:14:05.721Z] [runtime-status] [51307] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:14:05.723Z] [runtime-status] [51307] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-27T10:14:05.763Z] [runtime-status] [51307] Checked functions.config() {"config":{}} 
+[debug] [2020-04-27T10:14:05.764Z] [runtime-status] [51307] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:14:05.765Z] [runtime-status] [51307] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:14:05.766Z] [runtime-status] [51307] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:14:05.766Z] [runtime-status] [51307] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-27T10:14:05.901Z] [runtime-status] [51307] Trigger "uploadImage" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "uploadImage"
+[debug] [2020-04-27T10:14:05.901Z] [runtime-status] [51307] triggerDefinition {"httpsTrigger":{},"name":"uploadImage","entryPoint":"uploadImage"} 
+[debug] [2020-04-27T10:14:05.901Z] [runtime-status] [51307] Running uploadImage in mode HTTPS 
+[debug] [2020-04-27T10:14:05.907Z] [runtime-status] [51307] Attempting to listen to socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_51307.sock 
+[debug] [2020-04-27T10:14:05.911Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-27T10:14:05.945Z] [runtime-status] [51307] Ephemeral server handling POST request 
+[debug] [2020-04-27T10:14:05.967Z] [runtime-status] [51307] Ephemeral server survived. 
+[warn] ⚠  External network resource requested!
+   - URL: "https://api.backblazeb2.com/b2api/v2/b2_authorize_account"
+ - Be careful, this may be a production service.
+[warn] ⚠  External network resource requested!
+   - URL: "https://api001.backblazeb2.com/b2api/v2/b2_get_upload_url"
+ - Be careful, this may be a production service.
+[warn] ⚠  functions: Your function timed out after ~60s. To configure this timeout, see
+      https://firebase.google.com/docs/functions/manage-functions#set_timeout_and_memory_allocation.
+[info] >  /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:614 {"user":"/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:614"}
+[info] >                  throw new Error("Function timed out."); {"user":"                throw new Error(\"Function timed out.\");"}
+[info] >                  ^ {"user":"                ^"}
+[info] >   {"user":""}
+[info] >  Error: Function timed out. {"user":"Error: Function timed out."}
+[info] >      at Timeout._onTimeout (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:614:23) {"user":"    at Timeout._onTimeout (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:614:23)"}
+[info] >      at listOnTimeout (internal/timers.js:531:17) {"user":"    at listOnTimeout (internal/timers.js:531:17)"}
+[info] >      at processTimers (internal/timers.js:475:7) {"user":"    at processTimers (internal/timers.js:475:7)"}
+[debug] [2020-04-27T10:14:07.436Z] [worker-uploadImage-e571262d-25a1-497d-8d02-b9e6251a27d2]: exited 
+[debug] [2020-04-27T10:14:07.436Z] [worker-uploadImage-e571262d-25a1-497d-8d02-b9e6251a27d2]: FINISHED 
+[debug] [2020-04-27T10:14:07.436Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[warn] ⚠  External network resource requested!
+   - URL: "https://pod-000-1136-14.backblaze.com/b2api/v2/b2_upload_file/e8aaee861f7dbdb87c140f1d/c001_v0001136_t0042"
+ - Be careful, this may be a production service.
+[info] >  { {"user":"{"}
+[info] >    accountId: '8ae6fdd8c4fd', {"user":"  accountId: '8ae6fdd8c4fd',"}
+[info] >    action: 'upload', {"user":"  action: 'upload',"}
+[info] >    bucketId: 'e8aaee861f7dbdb87c140f1d', {"user":"  bucketId: 'e8aaee861f7dbdb87c140f1d',"}
+[info] >    contentLength: 36268, {"user":"  contentLength: 36268,"}
+[info] >    contentMd5: '0eab2877bd2f183b848fc69bb20c36d8', {"user":"  contentMd5: '0eab2877bd2f183b848fc69bb20c36d8',"}
+[info] >    contentSha1: '41f92ee92296c44eeae242bab52784fa323d1815', {"user":"  contentSha1: '41f92ee92296c44eeae242bab52784fa323d1815',"}
+[info] >    contentType: 'image/jpeg', {"user":"  contentType: 'image/jpeg',"}
+[info] >    fileId: '4_ze8aaee861f7dbdb87c140f1d_f1146dda19fa83787_d20200427_m101409_c001_v0001136_t0042', {"user":"  fileId: '4_ze8aaee861f7dbdb87c140f1d_f1146dda19fa83787_d20200427_m101409_c001_v0001136_t0042',"}
+[info] >    fileInfo: { {"user":"  fileInfo: {"}
+[info] >      src_last_modified_millis: '1587982445968', {"user":"    src_last_modified_millis: '1587982445968',"}
+[info] >      hash_sha1: '41f92ee92296c44eeae242bab52784fa323d1815' {"user":"    hash_sha1: '41f92ee92296c44eeae242bab52784fa323d1815'"}
+[info] >    }, {"user":"  },"}
+[info] >    fileName: '720040522801.jpg', {"user":"  fileName: '720040522801.jpg',"}
+[info] >    uploadTimestamp: 1587982449000 {"user":"  uploadTimestamp: 1587982449000"}
+[info] >  } {"user":"}"}
+[warn] ⚠  functions: Your function timed out after ~60s. To configure this timeout, see
+      https://firebase.google.com/docs/functions/manage-functions#set_timeout_and_memory_allocation.
+[info] >  /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:614 {"user":"/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:614"}
+[info] >                  throw new Error("Function timed out."); {"user":"                throw new Error(\"Function timed out.\");"}
+[info] >                  ^ {"user":"                ^"}
+[info] >   {"user":""}
+[info] >  Error: Function timed out. {"user":"Error: Function timed out."}
+[info] >      at Timeout._onTimeout (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:614:23) {"user":"    at Timeout._onTimeout (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:614:23)"}
+[info] >      at listOnTimeout (internal/timers.js:531:17) {"user":"    at listOnTimeout (internal/timers.js:531:17)"}
+[info] >      at processTimers (internal/timers.js:475:7) {"user":"    at processTimers (internal/timers.js:475:7)"}
+[debug] [2020-04-27T10:15:05.916Z] [worker-uploadImage-2e88173e-5835-4c58-8715-69646b5e9d98]: exited 
+[debug] [2020-04-27T10:15:05.917Z] [worker-uploadImage-2e88173e-5835-4c58-8715-69646b5e9d98]: FINISHED 
+[debug] [2020-04-27T10:15:05.917Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-27T10:15:16.667Z] ----------------------------------------------------------------------
+[debug] [2020-04-27T10:15:16.671Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start --only functions
+[debug] [2020-04-27T10:15:16.672Z] CLI Version:   8.0.2
+[debug] [2020-04-27T10:15:16.672Z] Platform:      darwin
+[debug] [2020-04-27T10:15:16.672Z] Node Version:  v12.15.0
+[debug] [2020-04-27T10:15:16.673Z] Time:          Mon Apr 27 2020 12:15:16 GMT+0200 (GMT+02:00)
+[debug] [2020-04-27T10:15:16.673Z] ----------------------------------------------------------------------
+[debug] [2020-04-27T10:15:16.674Z] 
+[debug] [2020-04-27T10:15:16.687Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-27T10:15:16.688Z] > authorizing via signed-in user
+[info] i  emulators: Starting emulators: functions
+[warn] ⚠  emulators: It seems that you are running multiple instances of the emulator suite for project viarami-test. This may result in unexpected behavior.
+[debug] [2020-04-27T10:15:16.723Z] [hub] writing locator at /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/hub-viarami-test.json
+[info] ✔  hub: emulator hub started at http://localhost:4400
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "12"
+[info] ✔  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions" for Cloud Functions...
+[debug] [2020-04-27T10:15:16.791Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-27T10:15:16.792Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-04-27T10:15:16.792Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-27T10:15:16.794Z] [worker-~diagnostic~-7925ec23-5fa9-49e0-b8c7-30d024f281a9]: Assigning socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_51345.sock 
+[debug] [2020-04-27T10:15:16.795Z] [worker-~diagnostic~-7925ec23-5fa9-49e0-b8c7-30d024f281a9]: BUSY 
+[debug] [2020-04-27T10:15:17.132Z] [runtime-status] [51345] Functions runtime initialized. {"cwd":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions","node_version":"12.15.0"} 
+[debug] [2020-04-27T10:15:17.132Z] [runtime-status] [51345] Disabled runtime features: undefined 
+[debug] [2020-04-27T10:15:17.134Z] [runtime-status] [51345] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:15:17.137Z] [runtime-status] [51345] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:15:17.138Z] [runtime-status] [51345] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-27T10:15:17.214Z] [runtime-status] [51345] Checked functions.config() {"config":{}} 
+[debug] [2020-04-27T10:15:17.215Z] [runtime-status] [51345] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:15:17.216Z] [runtime-status] [51345] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:15:17.217Z] [runtime-status] [51345] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:15:17.217Z] [runtime-status] [51345] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"}} 
+[info] ✔  functions[uploadImage]: http function initialized (http://localhost:5001/viarami-test/us-central1/uploadImage).
+[info] ✔  emulators: All emulators started, it is now safe to connect.
+[debug] [2020-04-27T10:15:17.479Z] [worker-~diagnostic~-7925ec23-5fa9-49e0-b8c7-30d024f281a9]: IDLE 
+[debug] [2020-04-27T10:15:25.608Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-27T10:15:25.608Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-27T10:15:25.609Z] Accepted request POST /viarami-test/us-central1/uploadImage --> uploadImage
+[debug] [2020-04-27T10:15:25.632Z] [worker-pool] addWorker(uploadImage) 
+[debug] [2020-04-27T10:15:25.633Z] [worker-pool] Adding worker with key uploadImage, total=1 
+[debug] [2020-04-27T10:15:25.633Z] [worker-pool] submitWork(triggerId=uploadImage) 
+[debug] [2020-04-27T10:15:25.633Z] [worker-uploadImage-17cf8f9e-1356-4d77-8233-df7c24561089]: Assigning socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_51347.sock 
+[debug] [2020-04-27T10:15:25.633Z] [worker-uploadImage-17cf8f9e-1356-4d77-8233-df7c24561089]: BUSY 
+[debug] [2020-04-27T10:15:26.855Z] [runtime-status] [51347] Functions runtime initialized. {"cwd":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions","node_version":"12.15.0"} 
+[debug] [2020-04-27T10:15:26.865Z] [runtime-status] [51347] Disabled runtime features: undefined 
+[debug] [2020-04-27T10:15:26.869Z] [runtime-status] [51347] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:15:26.870Z] [runtime-status] [51347] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:15:26.874Z] [runtime-status] [51347] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-27T10:15:26.945Z] [runtime-status] [51347] Checked functions.config() {"config":{}} 
+[debug] [2020-04-27T10:15:26.947Z] [runtime-status] [51347] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:15:26.948Z] [runtime-status] [51347] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:15:26.948Z] [runtime-status] [51347] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:15:26.949Z] [runtime-status] [51347] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-27T10:15:27.237Z] [runtime-status] [51347] Trigger "uploadImage" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "uploadImage"
+[debug] [2020-04-27T10:15:27.238Z] [runtime-status] [51347] triggerDefinition {"httpsTrigger":{},"name":"uploadImage","entryPoint":"uploadImage"} 
+[debug] [2020-04-27T10:15:27.238Z] [runtime-status] [51347] Running uploadImage in mode HTTPS 
+[debug] [2020-04-27T10:15:27.254Z] [runtime-status] [51347] Attempting to listen to socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_51347.sock 
+[debug] [2020-04-27T10:15:27.268Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-27T10:15:27.316Z] [runtime-status] [51347] Ephemeral server handling POST request 
+[debug] [2020-04-27T10:15:27.349Z] [runtime-status] [51347] Ephemeral server survived. 
+[warn] ⚠  External network resource requested!
+   - URL: "https://api.backblazeb2.com/b2api/v2/b2_authorize_account"
+ - Be careful, this may be a production service.
+[warn] ⚠  External network resource requested!
+   - URL: "https://api001.backblazeb2.com/b2api/v2/b2_get_upload_url"
+ - Be careful, this may be a production service.
+[warn] ⚠  External network resource requested!
+   - URL: "https://pod-000-1136-03.backblaze.com/b2api/v2/b2_upload_file/e8aaee861f7dbdb87c140f1d/c001_v0001136_t0012"
+ - Be careful, this may be a production service.
+[info] >  { {"user":"{"}
+[info] >    accountId: '8ae6fdd8c4fd', {"user":"  accountId: '8ae6fdd8c4fd',"}
+[info] >    action: 'upload', {"user":"  action: 'upload',"}
+[info] >    bucketId: 'e8aaee861f7dbdb87c140f1d', {"user":"  bucketId: 'e8aaee861f7dbdb87c140f1d',"}
+[info] >    contentLength: 36268, {"user":"  contentLength: 36268,"}
+[info] >    contentMd5: '0eab2877bd2f183b848fc69bb20c36d8', {"user":"  contentMd5: '0eab2877bd2f183b848fc69bb20c36d8',"}
+[info] >    contentSha1: '41f92ee92296c44eeae242bab52784fa323d1815', {"user":"  contentSha1: '41f92ee92296c44eeae242bab52784fa323d1815',"}
+[info] >    contentType: 'image/jpeg', {"user":"  contentType: 'image/jpeg',"}
+[info] >    fileId: '4_ze8aaee861f7dbdb87c140f1d_f1035a3e61d9e90f7_d20200427_m101530_c001_v0001136_t0012', {"user":"  fileId: '4_ze8aaee861f7dbdb87c140f1d_f1035a3e61d9e90f7_d20200427_m101530_c001_v0001136_t0012',"}
+[info] >    fileInfo: { {"user":"  fileInfo: {"}
+[info] >      src_last_modified_millis: '1587982527350', {"user":"    src_last_modified_millis: '1587982527350',"}
+[info] >      hash_sha1: '41f92ee92296c44eeae242bab52784fa323d1815' {"user":"    hash_sha1: '41f92ee92296c44eeae242bab52784fa323d1815'"}
+[info] >    }, {"user":"  },"}
+[info] >    fileName: '832237475646.jpg', {"user":"  fileName: '832237475646.jpg',"}
+[info] >    uploadTimestamp: 1587982530000 {"user":"  uploadTimestamp: 1587982530000"}
+[info] >  } {"user":"}"}
+[warn] ⚠  functions: Your function timed out after ~60s. To configure this timeout, see
+      https://firebase.google.com/docs/functions/manage-functions#set_timeout_and_memory_allocation.
+[info] >  /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:614 {"user":"/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:614"}
+[info] >                  throw new Error("Function timed out."); {"user":"                throw new Error(\"Function timed out.\");"}
+[info] >                  ^ {"user":"                ^"}
+[info] >   {"user":""}
+[info] >  Error: Function timed out. {"user":"Error: Function timed out."}
+[info] >      at Timeout._onTimeout (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:614:23) {"user":"    at Timeout._onTimeout (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:614:23)"}
+[info] >      at listOnTimeout (internal/timers.js:531:17) {"user":"    at listOnTimeout (internal/timers.js:531:17)"}
+[info] >      at processTimers (internal/timers.js:475:7) {"user":"    at processTimers (internal/timers.js:475:7)"}
+[debug] [2020-04-27T10:16:27.258Z] [worker-uploadImage-17cf8f9e-1356-4d77-8233-df7c24561089]: exited 
+[debug] [2020-04-27T10:16:27.258Z] [worker-uploadImage-17cf8f9e-1356-4d77-8233-df7c24561089]: FINISHED 
+[debug] [2020-04-27T10:16:27.258Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-27T10:31:25.708Z] File /Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/index.js changed, reloading triggers 
+[debug] [2020-04-27T10:31:26.716Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-04-27T10:31:26.716Z] [worker-~diagnostic~-7925ec23-5fa9-49e0-b8c7-30d024f281a9]: FINISHING 
+[debug] [2020-04-27T10:31:26.719Z] [worker-pool] Cleaned up workers for uploadImage: 1 --> 0 
+[debug] [2020-04-27T10:31:26.731Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-27T10:31:26.731Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-04-27T10:31:26.731Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-27T10:31:26.732Z] [worker-~diagnostic~-2def35f4-4cb6-4a20-b751-460392d38d25]: Assigning socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_51605.sock 
+[debug] [2020-04-27T10:31:26.732Z] [worker-~diagnostic~-2def35f4-4cb6-4a20-b751-460392d38d25]: BUSY 
+[debug] [2020-04-27T10:31:26.733Z] [worker-~diagnostic~-7925ec23-5fa9-49e0-b8c7-30d024f281a9]: exited 
+[debug] [2020-04-27T10:31:26.733Z] [worker-~diagnostic~-7925ec23-5fa9-49e0-b8c7-30d024f281a9]: FINISHED 
+[debug] [2020-04-27T10:31:27.420Z] [runtime-status] [51605] Functions runtime initialized. {"cwd":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions","node_version":"12.15.0"} 
+[debug] [2020-04-27T10:31:27.423Z] [runtime-status] [51605] Disabled runtime features: undefined 
+[debug] [2020-04-27T10:31:27.427Z] [runtime-status] [51605] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:31:27.428Z] [runtime-status] [51605] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:31:27.432Z] [runtime-status] [51605] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-27T10:31:27.507Z] [runtime-status] [51605] Checked functions.config() {"config":{}} 
+[debug] [2020-04-27T10:31:27.507Z] [runtime-status] [51605] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:31:27.508Z] [runtime-status] [51605] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:31:27.508Z] [runtime-status] [51605] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:31:27.508Z] [runtime-status] [51605] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-27T10:31:27.785Z] [worker-~diagnostic~-2def35f4-4cb6-4a20-b751-460392d38d25]: IDLE 
+[debug] [2020-04-27T10:37:28.654Z] File /Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/index.js changed, reloading triggers 
+[debug] [2020-04-27T10:37:29.659Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-04-27T10:37:29.659Z] [worker-~diagnostic~-2def35f4-4cb6-4a20-b751-460392d38d25]: FINISHING 
+[debug] [2020-04-27T10:37:29.660Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-04-27T10:37:29.714Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-27T10:37:29.715Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-04-27T10:37:29.715Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-27T10:37:29.715Z] [worker-~diagnostic~-807bb39b-5803-4267-8f2b-8f708773c977]: Assigning socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_51711.sock 
+[debug] [2020-04-27T10:37:29.715Z] [worker-~diagnostic~-807bb39b-5803-4267-8f2b-8f708773c977]: BUSY 
+[debug] [2020-04-27T10:37:29.721Z] [worker-~diagnostic~-2def35f4-4cb6-4a20-b751-460392d38d25]: exited 
+[debug] [2020-04-27T10:37:29.721Z] [worker-~diagnostic~-2def35f4-4cb6-4a20-b751-460392d38d25]: FINISHED 
+[debug] [2020-04-27T10:37:31.002Z] [runtime-status] [51711] Functions runtime initialized. {"cwd":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions","node_version":"12.15.0"} 
+[debug] [2020-04-27T10:37:31.005Z] [runtime-status] [51711] Disabled runtime features: undefined 
+[debug] [2020-04-27T10:37:31.014Z] [runtime-status] [51711] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:37:31.015Z] [runtime-status] [51711] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:37:31.019Z] [runtime-status] [51711] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-27T10:37:31.083Z] [runtime-status] [51711] Checked functions.config() {"config":{}} 
+[debug] [2020-04-27T10:37:31.084Z] [runtime-status] [51711] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:37:31.086Z] [runtime-status] [51711] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:37:31.086Z] [runtime-status] [51711] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:37:31.087Z] [runtime-status] [51711] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-27T10:37:31.371Z] [worker-~diagnostic~-807bb39b-5803-4267-8f2b-8f708773c977]: IDLE 
+[debug] [2020-04-27T10:37:32.756Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-27T10:37:32.757Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-27T10:37:32.757Z] Accepted request POST /viarami-test/us-central1/uploadImage --> uploadImage
+[debug] [2020-04-27T10:37:32.757Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-04-27T10:37:32.787Z] [worker-pool] addWorker(uploadImage) 
+[debug] [2020-04-27T10:37:32.787Z] [worker-pool] Adding worker with key uploadImage, total=1 
+[debug] [2020-04-27T10:37:32.787Z] [worker-pool] submitWork(triggerId=uploadImage) 
+[debug] [2020-04-27T10:37:32.787Z] [worker-uploadImage-7dc5abfb-8baf-4943-a7a4-614b092dafc9]: Assigning socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_51740.sock 
+[debug] [2020-04-27T10:37:32.788Z] [worker-uploadImage-7dc5abfb-8baf-4943-a7a4-614b092dafc9]: BUSY 
+[debug] [2020-04-27T10:37:33.500Z] [runtime-status] [51740] Functions runtime initialized. {"cwd":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions","node_version":"12.15.0"} 
+[debug] [2020-04-27T10:37:33.515Z] [runtime-status] [51740] Disabled runtime features: undefined 
+[debug] [2020-04-27T10:37:33.522Z] [runtime-status] [51740] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:37:33.531Z] [runtime-status] [51740] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:37:33.536Z] [runtime-status] [51740] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-27T10:37:33.624Z] [runtime-status] [51740] Checked functions.config() {"config":{}} 
+[debug] [2020-04-27T10:37:33.633Z] [runtime-status] [51740] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:37:33.638Z] [runtime-status] [51740] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:37:33.639Z] [runtime-status] [51740] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:37:33.641Z] [runtime-status] [51740] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-27T10:37:33.972Z] [runtime-status] [51740] Trigger "uploadImage" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "uploadImage"
+[debug] [2020-04-27T10:37:33.973Z] [runtime-status] [51740] triggerDefinition {"httpsTrigger":{},"name":"uploadImage","entryPoint":"uploadImage"} 
+[debug] [2020-04-27T10:37:33.974Z] [runtime-status] [51740] Running uploadImage in mode HTTPS 
+[debug] [2020-04-27T10:37:33.985Z] [runtime-status] [51740] Attempting to listen to socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_51740.sock 
+[debug] [2020-04-27T10:37:33.994Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-27T10:37:34.055Z] [runtime-status] [51740] Ephemeral server handling POST request 
+[debug] [2020-04-27T10:37:34.079Z] [runtime-status] [51740] Ephemeral server survived. 
+[warn] ⚠  External network resource requested!
+   - URL: "https://api.backblazeb2.com/b2api/v2/b2_authorize_account"
+ - Be careful, this may be a production service.
+[warn] ⚠  External network resource requested!
+   - URL: "https://api001.backblazeb2.com/b2api/v2/b2_get_upload_url"
+ - Be careful, this may be a production service.
+[warn] ⚠  External network resource requested!
+   - URL: "https://pod-000-1038-01.backblaze.com/b2api/v2/b2_upload_file/e8aaee861f7dbdb87c140f1d/c001_v0001038_t0030"
+ - Be careful, this may be a production service.
+[info] i  functions: Finished "uploadImage" in ~4s
+[debug] [2020-04-27T10:37:38.793Z] [worker-uploadImage-7dc5abfb-8baf-4943-a7a4-614b092dafc9]: IDLE 
+[debug] [2020-04-27T10:37:38.793Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-27T10:41:21.088Z] File /Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/index.js changed, reloading triggers 
+[debug] [2020-04-27T10:41:22.090Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-04-27T10:41:22.090Z] [worker-~diagnostic~-807bb39b-5803-4267-8f2b-8f708773c977]: FINISHING 
+[debug] [2020-04-27T10:41:22.090Z] [worker-pool] Shutting down IDLE worker (uploadImage) 
+[debug] [2020-04-27T10:41:22.090Z] [worker-uploadImage-7dc5abfb-8baf-4943-a7a4-614b092dafc9]: FINISHING 
+[debug] [2020-04-27T10:41:22.106Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-27T10:41:22.107Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-04-27T10:41:22.107Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-27T10:41:22.107Z] [worker-~diagnostic~-695c7e02-46fb-4214-a4a5-40f2cebb7924]: Assigning socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_51875.sock 
+[debug] [2020-04-27T10:41:22.107Z] [worker-~diagnostic~-695c7e02-46fb-4214-a4a5-40f2cebb7924]: BUSY 
+[debug] [2020-04-27T10:41:22.110Z] [worker-~diagnostic~-807bb39b-5803-4267-8f2b-8f708773c977]: exited 
+[debug] [2020-04-27T10:41:22.110Z] [worker-~diagnostic~-807bb39b-5803-4267-8f2b-8f708773c977]: FINISHED 
+[debug] [2020-04-27T10:41:22.110Z] [worker-uploadImage-7dc5abfb-8baf-4943-a7a4-614b092dafc9]: exited 
+[debug] [2020-04-27T10:41:22.110Z] [worker-uploadImage-7dc5abfb-8baf-4943-a7a4-614b092dafc9]: FINISHED 
+[debug] [2020-04-27T10:41:22.933Z] [runtime-status] [51875] Functions runtime initialized. {"cwd":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions","node_version":"12.15.0"} 
+[debug] [2020-04-27T10:41:22.935Z] [runtime-status] [51875] Disabled runtime features: undefined 
+[debug] [2020-04-27T10:41:22.939Z] [runtime-status] [51875] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:41:22.941Z] [runtime-status] [51875] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:41:22.948Z] [runtime-status] [51875] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-27T10:41:23.018Z] [runtime-status] [51875] Checked functions.config() {"config":{}} 
+[debug] [2020-04-27T10:41:23.018Z] [runtime-status] [51875] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:41:23.019Z] [runtime-status] [51875] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:41:23.020Z] [runtime-status] [51875] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:41:23.021Z] [runtime-status] [51875] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-27T10:41:23.353Z] [worker-~diagnostic~-695c7e02-46fb-4214-a4a5-40f2cebb7924]: IDLE 
+[debug] [2020-04-27T10:41:24.260Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-27T10:41:24.260Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-27T10:41:24.260Z] Accepted request POST /viarami-test/us-central1/uploadImage --> uploadImage
+[debug] [2020-04-27T10:41:24.260Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-04-27T10:41:24.260Z] [worker-pool] Cleaned up workers for uploadImage: 1 --> 0 
+[debug] [2020-04-27T10:41:24.271Z] [worker-pool] addWorker(uploadImage) 
+[debug] [2020-04-27T10:41:24.271Z] [worker-pool] Adding worker with key uploadImage, total=1 
+[debug] [2020-04-27T10:41:24.271Z] [worker-pool] submitWork(triggerId=uploadImage) 
+[debug] [2020-04-27T10:41:24.272Z] [worker-uploadImage-0e0792e9-158f-4905-9b5e-215e6069e2e8]: Assigning socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_51878.sock 
+[debug] [2020-04-27T10:41:24.272Z] [worker-uploadImage-0e0792e9-158f-4905-9b5e-215e6069e2e8]: BUSY 
+[debug] [2020-04-27T10:41:25.281Z] [runtime-status] [51878] Functions runtime initialized. {"cwd":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions","node_version":"12.15.0"} 
+[debug] [2020-04-27T10:41:25.284Z] [runtime-status] [51878] Disabled runtime features: undefined 
+[debug] [2020-04-27T10:41:25.287Z] [runtime-status] [51878] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:41:25.288Z] [runtime-status] [51878] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:41:25.290Z] [runtime-status] [51878] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-27T10:41:25.339Z] [runtime-status] [51878] Checked functions.config() {"config":{}} 
+[debug] [2020-04-27T10:41:25.342Z] [runtime-status] [51878] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:41:25.344Z] [runtime-status] [51878] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:41:25.348Z] [runtime-status] [51878] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:41:25.348Z] [runtime-status] [51878] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-27T10:41:25.502Z] [runtime-status] [51878] Trigger "uploadImage" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "uploadImage"
+[debug] [2020-04-27T10:41:25.502Z] [runtime-status] [51878] triggerDefinition {"httpsTrigger":{},"name":"uploadImage","entryPoint":"uploadImage"} 
+[debug] [2020-04-27T10:41:25.503Z] [runtime-status] [51878] Running uploadImage in mode HTTPS 
+[debug] [2020-04-27T10:41:25.507Z] [runtime-status] [51878] Attempting to listen to socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_51878.sock 
+[debug] [2020-04-27T10:41:25.512Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-27T10:41:25.547Z] [runtime-status] [51878] Ephemeral server handling POST request 
+[debug] [2020-04-27T10:41:25.587Z] [runtime-status] [51878] Ephemeral server survived. 
+[info] i  functions: Finished "uploadImage" in ~1s
+[debug] [2020-04-27T10:41:25.637Z] [worker-uploadImage-0e0792e9-158f-4905-9b5e-215e6069e2e8]: IDLE 
+[debug] [2020-04-27T10:41:25.637Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-27T10:42:19.893Z] File /Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/index.js changed, reloading triggers 
+[debug] [2020-04-27T10:42:20.897Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-04-27T10:42:20.897Z] [worker-~diagnostic~-695c7e02-46fb-4214-a4a5-40f2cebb7924]: FINISHING 
+[debug] [2020-04-27T10:42:20.897Z] [worker-pool] Shutting down IDLE worker (uploadImage) 
+[debug] [2020-04-27T10:42:20.897Z] [worker-uploadImage-0e0792e9-158f-4905-9b5e-215e6069e2e8]: FINISHING 
+[debug] [2020-04-27T10:42:20.917Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-27T10:42:20.917Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-04-27T10:42:20.917Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-27T10:42:20.917Z] [worker-~diagnostic~-81df7782-c7b2-4adb-b893-911cb538d3c5]: Assigning socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_51936.sock 
+[debug] [2020-04-27T10:42:20.917Z] [worker-~diagnostic~-81df7782-c7b2-4adb-b893-911cb538d3c5]: BUSY 
+[debug] [2020-04-27T10:42:20.919Z] [worker-~diagnostic~-695c7e02-46fb-4214-a4a5-40f2cebb7924]: exited 
+[debug] [2020-04-27T10:42:20.919Z] [worker-~diagnostic~-695c7e02-46fb-4214-a4a5-40f2cebb7924]: FINISHED 
+[debug] [2020-04-27T10:42:20.919Z] [worker-uploadImage-0e0792e9-158f-4905-9b5e-215e6069e2e8]: exited 
+[debug] [2020-04-27T10:42:20.919Z] [worker-uploadImage-0e0792e9-158f-4905-9b5e-215e6069e2e8]: FINISHED 
+[debug] [2020-04-27T10:42:21.582Z] [runtime-status] [51936] Functions runtime initialized. {"cwd":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions","node_version":"12.15.0"} 
+[debug] [2020-04-27T10:42:21.584Z] [runtime-status] [51936] Disabled runtime features: undefined 
+[debug] [2020-04-27T10:42:21.587Z] [runtime-status] [51936] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:42:21.589Z] [runtime-status] [51936] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:42:21.593Z] [runtime-status] [51936] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-27T10:42:21.650Z] [runtime-status] [51936] Checked functions.config() {"config":{}} 
+[debug] [2020-04-27T10:42:21.651Z] [runtime-status] [51936] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:42:21.652Z] [runtime-status] [51936] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:42:21.653Z] [runtime-status] [51936] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:42:21.653Z] [runtime-status] [51936] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-27T10:42:21.897Z] [worker-~diagnostic~-81df7782-c7b2-4adb-b893-911cb538d3c5]: IDLE 
+[debug] [2020-04-27T10:42:23.162Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-27T10:42:23.162Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-27T10:42:23.162Z] Accepted request POST /viarami-test/us-central1/uploadImage --> uploadImage
+[debug] [2020-04-27T10:42:23.163Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-04-27T10:42:23.163Z] [worker-pool] Cleaned up workers for uploadImage: 1 --> 0 
+[debug] [2020-04-27T10:42:23.167Z] [worker-pool] addWorker(uploadImage) 
+[debug] [2020-04-27T10:42:23.168Z] [worker-pool] Adding worker with key uploadImage, total=1 
+[debug] [2020-04-27T10:42:23.168Z] [worker-pool] submitWork(triggerId=uploadImage) 
+[debug] [2020-04-27T10:42:23.168Z] [worker-uploadImage-971dc659-1519-4945-8ece-8954b017abc0]: Assigning socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_51940.sock 
+[debug] [2020-04-27T10:42:23.168Z] [worker-uploadImage-971dc659-1519-4945-8ece-8954b017abc0]: BUSY 
+[debug] [2020-04-27T10:42:23.768Z] [runtime-status] [51940] Functions runtime initialized. {"cwd":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions","node_version":"12.15.0"} 
+[debug] [2020-04-27T10:42:23.773Z] [runtime-status] [51940] Disabled runtime features: undefined 
+[debug] [2020-04-27T10:42:23.781Z] [runtime-status] [51940] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:42:23.783Z] [runtime-status] [51940] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:42:23.790Z] [runtime-status] [51940] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-27T10:42:23.901Z] [runtime-status] [51940] Checked functions.config() {"config":{}} 
+[debug] [2020-04-27T10:42:23.902Z] [runtime-status] [51940] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:42:23.904Z] [runtime-status] [51940] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:42:23.909Z] [runtime-status] [51940] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:42:23.910Z] [runtime-status] [51940] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-27T10:42:24.136Z] [runtime-status] [51940] Trigger "uploadImage" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "uploadImage"
+[debug] [2020-04-27T10:42:24.137Z] [runtime-status] [51940] triggerDefinition {"httpsTrigger":{},"name":"uploadImage","entryPoint":"uploadImage"} 
+[debug] [2020-04-27T10:42:24.137Z] [runtime-status] [51940] Running uploadImage in mode HTTPS 
+[debug] [2020-04-27T10:42:24.143Z] [runtime-status] [51940] Attempting to listen to socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_51940.sock 
+[debug] [2020-04-27T10:42:24.158Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-27T10:42:24.205Z] [runtime-status] [51940] Ephemeral server handling POST request 
+[debug] [2020-04-27T10:42:24.226Z] [runtime-status] [51940] Ephemeral server survived. 
+[warn] ⚠  External network resource requested!
+   - URL: "https://api.backblazeb2.com/b2api/v2/b2_authorize_account"
+ - Be careful, this may be a production service.
+[warn] ⚠  External network resource requested!
+   - URL: "https://api001.backblazeb2.com/b2api/v2/b2_get_upload_url"
+ - Be careful, this may be a production service.
+[warn] ⚠  External network resource requested!
+   - URL: "https://pod-000-1134-12.backblaze.com/b2api/v2/b2_upload_file/e8aaee861f7dbdb87c140f1d/c001_v0001134_t0025"
+ - Be careful, this may be a production service.
+[warn] ⚠  functions: Your function timed out after ~60s. To configure this timeout, see
+      https://firebase.google.com/docs/functions/manage-functions#set_timeout_and_memory_allocation.
+[info] >  /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:614 {"user":"/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:614"}
+[info] >                  throw new Error("Function timed out."); {"user":"                throw new Error(\"Function timed out.\");"}
+[info] >                  ^ {"user":"                ^"}
+[info] >   {"user":""}
+[info] >  Error: Function timed out. {"user":"Error: Function timed out."}
+[info] >      at Timeout._onTimeout (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:614:23) {"user":"    at Timeout._onTimeout (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:614:23)"}
+[info] >      at listOnTimeout (internal/timers.js:531:17) {"user":"    at listOnTimeout (internal/timers.js:531:17)"}
+[info] >      at processTimers (internal/timers.js:475:7) {"user":"    at processTimers (internal/timers.js:475:7)"}
+[debug] [2020-04-27T10:43:24.160Z] [worker-uploadImage-971dc659-1519-4945-8ece-8954b017abc0]: exited 
+[debug] [2020-04-27T10:43:24.161Z] [worker-uploadImage-971dc659-1519-4945-8ece-8954b017abc0]: FINISHED 
+[debug] [2020-04-27T10:43:24.161Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-27T10:44:25.254Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-27T10:44:25.256Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-27T10:44:25.256Z] Accepted request POST /viarami-test/us-central1/uploadImage --> uploadImage
+[debug] [2020-04-27T10:44:25.257Z] [worker-pool] Cleaned up workers for uploadImage: 1 --> 0 
+[debug] [2020-04-27T10:44:25.264Z] [worker-pool] addWorker(uploadImage) 
+[debug] [2020-04-27T10:44:25.265Z] [worker-pool] Adding worker with key uploadImage, total=1 
+[debug] [2020-04-27T10:44:25.265Z] [worker-pool] submitWork(triggerId=uploadImage) 
+[debug] [2020-04-27T10:44:25.265Z] [worker-uploadImage-a44e09f1-5c81-4638-8fd3-ff45872dc108]: Assigning socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_51990.sock 
+[debug] [2020-04-27T10:44:25.265Z] [worker-uploadImage-a44e09f1-5c81-4638-8fd3-ff45872dc108]: BUSY 
+[debug] [2020-04-27T10:44:26.495Z] [runtime-status] [51990] Functions runtime initialized. {"cwd":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions","node_version":"12.15.0"} 
+[debug] [2020-04-27T10:44:26.497Z] [runtime-status] [51990] Disabled runtime features: undefined 
+[debug] [2020-04-27T10:44:26.500Z] [runtime-status] [51990] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:44:26.501Z] [runtime-status] [51990] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:44:26.503Z] [runtime-status] [51990] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-27T10:44:26.558Z] [runtime-status] [51990] Checked functions.config() {"config":{}} 
+[debug] [2020-04-27T10:44:26.561Z] [runtime-status] [51990] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:44:26.562Z] [runtime-status] [51990] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:44:26.562Z] [runtime-status] [51990] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:44:26.563Z] [runtime-status] [51990] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-27T10:44:26.816Z] [runtime-status] [51990] Trigger "uploadImage" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "uploadImage"
+[debug] [2020-04-27T10:44:26.816Z] [runtime-status] [51990] triggerDefinition {"httpsTrigger":{},"name":"uploadImage","entryPoint":"uploadImage"} 
+[debug] [2020-04-27T10:44:26.820Z] [runtime-status] [51990] Running uploadImage in mode HTTPS 
+[debug] [2020-04-27T10:44:26.832Z] [runtime-status] [51990] Attempting to listen to socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_51990.sock 
+[debug] [2020-04-27T10:44:26.837Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-27T10:44:26.878Z] [runtime-status] [51990] Ephemeral server handling POST request 
+[debug] [2020-04-27T10:44:26.899Z] [runtime-status] [51990] Ephemeral server survived. 
+[warn] ⚠  External network resource requested!
+   - URL: "https://api.backblazeb2.com/b2api/v2/b2_authorize_account"
+ - Be careful, this may be a production service.
+[warn] ⚠  External network resource requested!
+   - URL: "https://api001.backblazeb2.com/b2api/v2/b2_get_upload_url"
+ - Be careful, this may be a production service.
+[warn] ⚠  External network resource requested!
+   - URL: "https://pod-000-1137-17.backblaze.com/b2api/v2/b2_upload_file/e8aaee861f7dbdb87c140f1d/c001_v0001137_t0041"
+ - Be careful, this may be a production service.
+[info] i  functions: Finished "uploadImage" in ~4s
+[debug] [2020-04-27T10:44:31.491Z] [worker-uploadImage-a44e09f1-5c81-4638-8fd3-ff45872dc108]: IDLE 
+[debug] [2020-04-27T10:44:31.491Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-27T10:45:11.355Z] File /Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/index.js changed, reloading triggers 
+[debug] [2020-04-27T10:45:12.356Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-04-27T10:45:12.357Z] [worker-~diagnostic~-81df7782-c7b2-4adb-b893-911cb538d3c5]: FINISHING 
+[debug] [2020-04-27T10:45:12.358Z] [worker-pool] Shutting down IDLE worker (uploadImage) 
+[debug] [2020-04-27T10:45:12.358Z] [worker-uploadImage-a44e09f1-5c81-4638-8fd3-ff45872dc108]: FINISHING 
+[debug] [2020-04-27T10:45:12.371Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-27T10:45:12.371Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-04-27T10:45:12.371Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-27T10:45:12.372Z] [worker-~diagnostic~-309cdc6c-fedc-49d9-8a4a-40192a811761]: Assigning socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_52009.sock 
+[debug] [2020-04-27T10:45:12.372Z] [worker-~diagnostic~-309cdc6c-fedc-49d9-8a4a-40192a811761]: BUSY 
+[debug] [2020-04-27T10:45:12.374Z] [worker-~diagnostic~-81df7782-c7b2-4adb-b893-911cb538d3c5]: exited 
+[debug] [2020-04-27T10:45:12.374Z] [worker-~diagnostic~-81df7782-c7b2-4adb-b893-911cb538d3c5]: FINISHED 
+[debug] [2020-04-27T10:45:12.374Z] [worker-uploadImage-a44e09f1-5c81-4638-8fd3-ff45872dc108]: exited 
+[debug] [2020-04-27T10:45:12.374Z] [worker-uploadImage-a44e09f1-5c81-4638-8fd3-ff45872dc108]: FINISHED 
+[debug] [2020-04-27T10:45:13.003Z] [runtime-status] [52009] Functions runtime initialized. {"cwd":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions","node_version":"12.15.0"} 
+[debug] [2020-04-27T10:45:13.004Z] [runtime-status] [52009] Disabled runtime features: undefined 
+[debug] [2020-04-27T10:45:13.008Z] [runtime-status] [52009] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:45:13.010Z] [runtime-status] [52009] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:45:13.012Z] [runtime-status] [52009] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-27T10:45:13.078Z] [runtime-status] [52009] Checked functions.config() {"config":{}} 
+[debug] [2020-04-27T10:45:13.079Z] [runtime-status] [52009] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:45:13.079Z] [runtime-status] [52009] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:45:13.079Z] [runtime-status] [52009] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:45:13.079Z] [runtime-status] [52009] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-27T10:45:13.362Z] [worker-~diagnostic~-309cdc6c-fedc-49d9-8a4a-40192a811761]: IDLE 
+[info] ✔  functions[uploadFile]: http function initialized (http://localhost:5001/viarami-test/us-central1/uploadFile).
+[debug] [2020-04-27T10:47:14.216Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-04-27T10:47:14.217Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-04-27T10:47:14.217Z] Accepted request POST /viarami-test/us-central1/uploadFile --> uploadFile
+[debug] [2020-04-27T10:47:14.217Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 
+[debug] [2020-04-27T10:47:14.217Z] [worker-pool] Cleaned up workers for uploadImage: 1 --> 0 
+[debug] [2020-04-27T10:47:14.233Z] [worker-pool] addWorker(uploadFile) 
+[debug] [2020-04-27T10:47:14.233Z] [worker-pool] Adding worker with key uploadFile, total=1 
+[debug] [2020-04-27T10:47:14.233Z] [worker-pool] submitWork(triggerId=uploadFile) 
+[debug] [2020-04-27T10:47:14.233Z] [worker-uploadFile-e172cfb3-ccc6-4110-9dc8-422471daa5e9]: Assigning socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_52125.sock 
+[debug] [2020-04-27T10:47:14.234Z] [worker-uploadFile-e172cfb3-ccc6-4110-9dc8-422471daa5e9]: BUSY 
+[debug] [2020-04-27T10:47:14.907Z] [runtime-status] [52125] Functions runtime initialized. {"cwd":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions","node_version":"12.15.0"} 
+[debug] [2020-04-27T10:47:14.910Z] [runtime-status] [52125] Disabled runtime features: undefined 
+[debug] [2020-04-27T10:47:14.914Z] [runtime-status] [52125] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:47:14.917Z] [runtime-status] [52125] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:47:14.923Z] [runtime-status] [52125] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-27T10:47:14.997Z] [runtime-status] [52125] Checked functions.config() {"config":{}} 
+[debug] [2020-04-27T10:47:14.999Z] [runtime-status] [52125] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:47:15.002Z] [runtime-status] [52125] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:47:15.004Z] [runtime-status] [52125] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:47:15.004Z] [runtime-status] [52125] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-27T10:47:15.464Z] [runtime-status] [52125] Trigger "uploadFile" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "uploadFile"
+[debug] [2020-04-27T10:47:15.468Z] [runtime-status] [52125] triggerDefinition {"httpsTrigger":{},"name":"uploadFile","entryPoint":"uploadFile"} 
+[debug] [2020-04-27T10:47:15.468Z] [runtime-status] [52125] Running uploadFile in mode HTTPS 
+[debug] [2020-04-27T10:47:15.490Z] [runtime-status] [52125] Attempting to listen to socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_52125.sock 
+[debug] [2020-04-27T10:47:15.552Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-04-27T10:47:15.780Z] [runtime-status] [52125] Ephemeral server handling POST request 
+[debug] [2020-04-27T10:47:15.798Z] [runtime-status] [52125] Ephemeral server survived. 
+[warn] ⚠  External network resource requested!
+   - URL: "https://api.backblazeb2.com/b2api/v2/b2_authorize_account"
+ - Be careful, this may be a production service.
+[warn] ⚠  External network resource requested!
+   - URL: "https://api001.backblazeb2.com/b2api/v2/b2_get_upload_url"
+ - Be careful, this may be a production service.
+[warn] ⚠  External network resource requested!
+   - URL: "https://pod-000-1023-09.backblaze.com/b2api/v2/b2_upload_file/e8aaee861f7dbdb87c140f1d/c001_v0001023_t0014"
+ - Be careful, this may be a production service.
+[info] i  functions: Finished "uploadFile" in ~5s
+[debug] [2020-04-27T10:47:20.589Z] [worker-uploadFile-e172cfb3-ccc6-4110-9dc8-422471daa5e9]: IDLE 
+[debug] [2020-04-27T10:47:20.590Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-04-27T10:47:58.056Z] File /Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/index.js changed, reloading triggers 
+[debug] [2020-04-27T10:47:59.059Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-04-27T10:47:59.059Z] [worker-~diagnostic~-309cdc6c-fedc-49d9-8a4a-40192a811761]: FINISHING 
+[debug] [2020-04-27T10:47:59.059Z] [worker-pool] Shutting down IDLE worker (uploadFile) 
+[debug] [2020-04-27T10:47:59.060Z] [worker-uploadFile-e172cfb3-ccc6-4110-9dc8-422471daa5e9]: FINISHING 
+[debug] [2020-04-27T10:47:59.078Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-04-27T10:47:59.079Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-04-27T10:47:59.080Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-04-27T10:47:59.080Z] [worker-~diagnostic~-7349c847-6415-4d51-affb-d8d2f44744a6]: Assigning socketPath: /var/folders/c5/q82qcf4x6yzcmfxndhf7hxqc0000gn/T/fire_emu_52146.sock 
+[debug] [2020-04-27T10:47:59.080Z] [worker-~diagnostic~-7349c847-6415-4d51-affb-d8d2f44744a6]: BUSY 
+[debug] [2020-04-27T10:47:59.082Z] [worker-~diagnostic~-309cdc6c-fedc-49d9-8a4a-40192a811761]: exited 
+[debug] [2020-04-27T10:47:59.083Z] [worker-~diagnostic~-309cdc6c-fedc-49d9-8a4a-40192a811761]: FINISHED 
+[debug] [2020-04-27T10:47:59.083Z] [worker-uploadFile-e172cfb3-ccc6-4110-9dc8-422471daa5e9]: exited 
+[debug] [2020-04-27T10:47:59.083Z] [worker-uploadFile-e172cfb3-ccc6-4110-9dc8-422471daa5e9]: FINISHED 
+[debug] [2020-04-27T10:48:00.125Z] [runtime-status] [52146] Functions runtime initialized. {"cwd":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions","node_version":"12.15.0"} 
+[debug] [2020-04-27T10:48:00.127Z] [runtime-status] [52146] Disabled runtime features: undefined 
+[debug] [2020-04-27T10:48:00.130Z] [runtime-status] [52146] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:48:00.131Z] [runtime-status] [52146] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:48:00.133Z] [runtime-status] [52146] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-04-27T10:48:00.197Z] [runtime-status] [52146] Checked functions.config() {"config":{}} 
+[debug] [2020-04-27T10:48:00.198Z] [runtime-status] [52146] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:48:00.200Z] [runtime-status] [52146] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-04-27T10:48:00.201Z] [runtime-status] [52146] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-04-27T10:48:00.201Z] [runtime-status] [52146] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/Markus/Eigene Dateien/Projekte/Viarami/Coding/Firebase-Cloud-Function-Backblaze-B2/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-04-27T10:48:00.473Z] [worker-~diagnostic~-7349c847-6415-4d51-affb-d8d2f44744a6]: IDLE 
